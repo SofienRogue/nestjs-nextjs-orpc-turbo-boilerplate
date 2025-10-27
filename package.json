@@ -6,17 +6,37 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "typecheck": "turbo typecheck",
+    "clean": "turbo clean && rm -rf node_modules"
+  },
+  "dependencies": {
+    "@orpc/client": "^1.10.0",
+    "@orpc/contract": "^1.10.0",
+    "@orpc/nest": "^1.10.0",
+    "@orpc/openapi-client": "^1.10.0",
+    "@orpc/react": "^1.10.0",
+    "@orpc/server": "^1.10.0",
+    "@tanstack/react-query": "^5.62.14",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@workspace/eslint-config": "workspace:*",
+    "@workspace/prettier-config": "workspace:*",
     "@workspace/typescript-config": "workspace:*",
+    "minimatch": "^10.0.3",
     "prettier": "^3.6.2",
-    "turbo": "^2.5.5",
-    "typescript": "5.7.3"
+    "turbo": "^2.5.8",
+    "typescript": "^5.7.3"
   },
   "packageManager": "pnpm@10.4.1",
   "engines": {
     "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@nestjs/core",
+      "@swc/core"
+    ]
   }
 }

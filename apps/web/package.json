@@ -3,15 +3,18 @@
   "version": "0.0.1",
   "type": "module",
   "private": true,
+  "prettier": "@workspace/prettier-config",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf .next node_modules"
   },
   "dependencies": {
+    "@workspace/orpc": "workspace:*",
     "@workspace/ui": "workspace:*",
     "lucide-react": "^0.475.0",
     "next": "^15.4.5",
@@ -24,7 +27,7 @@
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
     "@workspace/eslint-config": "workspace:^",
-    "@workspace/typescript-config": "workspace:*",
-    "typescript": "^5.9.2"
+    "@workspace/prettier-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*"
   }
 }
