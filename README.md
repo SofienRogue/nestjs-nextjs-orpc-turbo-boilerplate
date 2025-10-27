@@ -78,7 +78,7 @@ pnpm clean            # Clean all build artifacts and node_modules
 Add shadcn/ui components to your web app:
 
 ```bash
-pnpm dlx shadcn@latest add button -c apps/web
+pnpm dlx shadcn@canary add [COMPONENT]
 ```
 
 This places components in `packages/ui/src/components/` for sharing across apps.
@@ -227,8 +227,8 @@ This monorepo uses:
 ## 📚 Tech Stack
 
 ### Frontend (web)
-- Next.js 15 (App Router)
-- React 19
+- Next.js 16 (App Router)
+- React 19.2
 - TypeScript
 - Tailwind CSS 4
 - shadcn/ui components
