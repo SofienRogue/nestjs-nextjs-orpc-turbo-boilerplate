@@ -1,0 +1,16 @@
+{
+  "createTitle": "تم إنشاء حجز جديد في",
+  "createDescription": "تم إنشاء حجز جديد",
+  "approvedTitle": "تمت الموافقة على الحجز",
+  "approvedDescription": "تهانينا، تمت الموافقة على حجزك",
+  "rejectionTitle": "تم رفض الحجز",
+  "rejectionDescription": "للأسف، تم رفض حجزك",
+  "pendingTitle": "الحجز قيد المعالجة",
+  "pendingDescription": "حجزك قيد التحقق",
+  "reportedTitle": "تم الإبلاغ عن الحجز",
+  "reportedDescription": "تم الإبلاغ عن حجزك",
+  "teammateParticipationRequestTitle": "طلب مشاركة زميل في الفريق",
+  "teammateParticipationRequestDescription": "تم طلب مشاركة زميل في الفريق",
+  "teammateParticipationApprovedTitle": "تمت الموافقة على مشاركة زميلك في الفريق",
+  "teammateParticipationApprovedDescription": "تمت الموافقة على مشاركة زميلك في الفريق"
+}

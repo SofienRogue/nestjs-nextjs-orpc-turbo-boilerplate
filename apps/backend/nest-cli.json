@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "builder": "swc",
+    "typeCheck": true,
+    "assets": [
+      {
+        "include": "i18n/**/*",
+        "watchAssets": true
+      },
+      {
+        "include": "src/**/*.json",
+        "outDir": "dist/",
+        "watchAssets": true
+      },
+      {
+        "include": "mail/templates/**/*",
+        "watchAssets": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "emailAlreadyExists": "E-mail déjà utilisé",
+  "phoneAlreadyExists": "Le numéro de téléphone est déjà utilisé",
+  "invitationCodeAlreadyExists": "Le code d'invitation est déjà utilisé",
+  "nameAlreadyExists": "Le nom est déjà utilisé",
+  "messageAlreadyExists": "Le message est déjà utilisé",
+  "emailNotExists": "L'email n'existe pas",
+  "phoneNumberAlreadyExists": "Le numéro de numéro est déjà utilisé",
+  "imageNotExists": "Image introuvable",
+  "categoryNotExists": "Categorie introuvable",
+  "roleNotExists": "Role introuvable",
+  "statusNotExists": "Statut introuvable",
+  "referralCodeNotExists": "Le code de referral est introuvable",
+  "userNotExists": "Utilisateur introuvable",
+  "taskNotExists": "Tâche introuvable",
+  "unique": "doit etre unique"
+}

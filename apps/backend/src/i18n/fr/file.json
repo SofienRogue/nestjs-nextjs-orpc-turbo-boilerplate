@@ -1,0 +1,5 @@
+{
+  "failedUpload": "Impossible d'importer le fichier",
+  "failedDelete": "Impossible de supprimer le fichier",
+  "fileExists": "Le fichier existe déja"
+}

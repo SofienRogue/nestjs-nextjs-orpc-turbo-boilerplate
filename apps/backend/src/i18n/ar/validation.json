@@ -1,0 +1,17 @@
+{
+  "emailAlreadyExists": "البريد الإلكتروني مستخدم بالفعل",
+  "phoneAlreadyExists": "رقم الهاتف مستخدم بالفعل",
+  "invitationCodeAlreadyExists": "رمز الدعوة مستخدم بالفعل",
+  "nameAlreadyExists": "الاسم مستخدم بالفعل",
+  "messageAlreadyExists": "الرسالة موجودة بالفعل",
+  "emailNotExists": "البريد الإلكتروني غير موجود",
+  "phoneNumberAlreadyExists": "رقم الهاتف مستخدم بالفعل",
+  "imageNotExists": "الصورة غير موجودة",
+  "categoryNotExists": "الفئة غير موجودة",
+  "roleNotExists": "الدور غير موجود",
+  "statusNotExists": "الحالة غير موجودة",
+  "referralCodeNotExists": "رمز الإحالة غير موجود",
+  "userNotExists": "المستخدم غير موجود",
+  "taskNotExists": "المهمة غير موجودة",
+  "unique": "يجب أن يكون فريدًا"
+}

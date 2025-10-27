@@ -1,0 +1,16 @@
+{
+  "createTitle": "New Reservation Created at:",
+  "createDescription": "A New Reservation has been Created",
+  "approvedTitle": "Reservation Approved",
+  "approvedDescription": "Congratulations, Your reservation has been approved",
+  "rejectionTitle": "Reservation Rejected",
+  "rejectionDescription": "Unfortunately, your Reservation has been Rejected",
+  "pendingTitle": "Reservation Under treatment",
+  "pendingDescription": "Your Reservation is under verification",
+  "reportedTitle": "Reservation is reported",
+  "reportedDescription": "Your Reservation has been reported",
+  "teammateParticipationRequestTitle": "Teammate Participation Request",
+  "teammateParticipationRequestDescription": "Teammate Participation has been requested",
+  "teammateParticipationApprovedTitle": "Teammate Participation Approved",
+  "teammateParticipationApprovedDescription": "Teammate Participation has been Approved"
+}

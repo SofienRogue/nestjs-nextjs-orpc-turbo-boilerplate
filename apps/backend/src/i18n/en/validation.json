@@ -1,0 +1,17 @@
+{
+  "emailAlreadyExists": "Email already in use",
+  "phoneAlreadyExists": "Phone already in use",
+  "invitationCodeAlreadyExists": "Invitation code already in use",
+  "nameAlreadyExists": "Name already in use",
+  "messageAlreadyExists": "Message already exists",
+  "emailNotExists": "Email not found",
+  "phoneNumberAlreadyExists": "Phone number already in use",
+  "imageNotExists": "Image not found",
+  "categoryNotExists": "Category not found",
+  "roleNotExists": "Role not found",
+  "statusNotExists": "Status not found",
+  "referralCodeNotExists": "Referral code not found",
+  "userNotExists": "User not found",
+  "taskNotExists": "Task not found",
+  "unique": "must be unique"
+}

@@ -1,0 +1,5 @@
+{
+  "failedUpload": "Failed to upload file",
+  "failedDelete": "Failed to delete file",
+  "fileExists": "File already exists"
+}
