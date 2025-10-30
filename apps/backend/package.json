@@ -31,6 +31,7 @@
     "schema:drop": "env-cmd -f .env.local -- pnpm run typeorm -- -d src/database/data-source.ts schema:drop"
   },
   "dependencies": {
+    "@hedystia/better-auth-typeorm": "^0.3.7",
     "@nestjs-modules/mailer": "^2.0.2",
     "@nestjs/common": "^11.0.1",
     "@nestjs/config": "^4.0.2",
@@ -42,9 +43,12 @@
     "@orpc/server": "^1.10.2",
     "@orpc/zod": "^1.10.2",
     "@scalar/nestjs-api-reference": "^1.0.5",
+    "@thallesp/nestjs-better-auth": "^2.1.0",
     "@workspace/orpc": "workspace:*",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.2",
+    "dotenv": "^17.2.3",
+    "env-cmd": "^11.0.0",
     "minimatch": "^10.0.3",
     "minio": "^8.0.6",
     "multer": "^2.0.2",

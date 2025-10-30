@@ -17,10 +17,12 @@ import { ZodValidationPipe, ZodSerializerInterceptor } from 'nestjs-zod';
 import { HttpExceptionFilter } from './utils/filters/http-exception.filter.js';
 import { MinioModule } from './utils/minio/minio.module.js';
 import { MulterConfigModule } from './shared/multer-config.module.js';
+import { AuthModule } from '@thallesp/nestjs-better-auth';
 import { HeaderResolver, I18nModule } from 'nestjs-i18n';
 import { AllConfigType } from './config/config.type.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { auth } from './auth.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -54,6 +56,7 @@ const __dirname = path.dirname(__filename);
         }),
       }),
     }),
+    AuthModule.forRoot({auth}),
     I18nModule.forRootAsync({
       useFactory: (configService: ConfigService<AllConfigType>) => ({
         fallbackLanguage: configService.getOrThrow('app.fallbackLanguage', {
