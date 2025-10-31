@@ -12,6 +12,9 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+#DB migrations
+src/database/migrations
+
 # OS
 .DS_Store
 

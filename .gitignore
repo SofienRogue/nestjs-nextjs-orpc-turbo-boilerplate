@@ -18,6 +18,8 @@ openspec
 
 # Testing
 coverage
+deployment/turbo-db
+deployment/storage
 
 # Turbo
 .turbo
