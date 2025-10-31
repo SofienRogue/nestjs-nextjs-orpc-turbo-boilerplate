@@ -202,3 +202,5 @@ This monorepo uses:
 
 ## 📄 License
 MIT - Public project open for contribution
+
+Next: [Project Setup](./docs/setup.md)

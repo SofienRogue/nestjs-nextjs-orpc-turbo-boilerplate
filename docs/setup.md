@@ -7,10 +7,7 @@ NestJS Boilerplate supports [TypeORM](https://www.npmjs.com/package/typeorm) for
 ## Table of Contents <!-- omit in toc -->
 
 - [Comfortable development (PostgreSQL + TypeORM)](#comfortable-development-postgresql--typeorm)
-  - [Video guideline (PostgreSQL + TypeORM)](#video-guideline-postgresql--typeorm)
-- [Comfortable development (MongoDB + Mongoose)](#comfortable-development-mongodb--mongoose)
 - [Quick run (PostgreSQL + TypeORM)](#quick-run-postgresql--typeorm)
-- [Quick run (MongoDB + Mongoose)](#quick-run-mongodb--mongoose)
 - [Links](#links)
 
 ---
@@ -50,8 +47,8 @@ NestJS Boilerplate supports [TypeORM](https://www.npmjs.com/package/typeorm) for
    ```bash
    pnpm run migration:sql
    ```
-   New migration created in `apps/backend/src/migrations` with sql command
-   Copy sql command from new migration
+   New migration created in `apps/backend/src/migrations` with sql command <br>
+   Copy sql command from new migration <br>
    Open adminer <http://localhost:8088>
    login with:
    - server: postgres:5432
@@ -69,18 +66,15 @@ NestJS Boilerplate supports [TypeORM](https://www.npmjs.com/package/typeorm) for
 
 6. Open <http://localhost:5010>
 
-7. Open Scalar OpenApi docs <http://localhost:5010/api-docs>
-
 
 ## Links
 
-- Swagger (API docs): <http://localhost:3000/docs>
-- Adminer (client for DB): <http://localhost:8080>
-- MongoDB Express (client for DB): <http://localhost:8081/>
+- Open Scalar OpenApi docs <http://localhost:5010/api-docs>
+- Adminer (client for DB): <http://localhost:8088>
 - Maildev: <http://localhost:1080>
 
 ---
 
-Previous: [Introduction](readme.md)
+Previous: [Introduction](../README.md)
 
-Next: [Architecture](architecture.md)
+Next: [Database](database.md)
