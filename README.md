@@ -1,13 +1,13 @@
 # Tech Docs Turbo Monorepo
 
-A modern full-stack monorepo built with Turborepo, featuring a Next.js frontend and NestJS backend.
+A modern full-stack monorepo built with Turborepo, featuring a Next.js, NestJS, ORPPC and Better Auth.
 
 ## 📁 Project Structure
 
 ```
 tech-docs-turbo/
 ├── apps/
-│   ├── web/          # Next.js 15 frontend with shadcn/ui
+│   ├── web/          # Next.js 16 frontend with shadcn/ui
 │   └── backend/      # NestJS API with TypeORM + oRPC
 ├── packages/
 │   ├── orpc/                  # Shared oRPC contracts (type-safe API)
@@ -25,24 +25,11 @@ tech-docs-turbo/
 - Node.js >= 20
 - pnpm 10.4.1+
 
-### Installation
-
-```bash
-# Install dependencies
-pnpm install
-
-# Start development servers
-pnpm dev
-
-# Build all apps
-pnpm build
-```
-
 ## 📦 Apps & Packages
 
 ### Apps
 
-- **web**: Next.js 15 application with App Router, React 19, shadcn/ui components, and type-safe oRPC client
+- **web**: Next.js 16 application with App Router, React 19.2, shadcn/ui components, and type-safe oRPC client
 - **backend**: NestJS API with TypeORM, PostgreSQL, and oRPC integration using @orpc/nest
 
 ### Packages
@@ -96,38 +83,6 @@ export default function Page() {
 ## 🗄️ Backend Setup
 
 The backend uses NestJS with TypeORM and PostgreSQL.
-
-### Environment Variables
-
-Create `apps/backend/.env.local`:
-
-```env
-# Database
-DATABASE_HOST=localhost
-DATABASE_PORT=5432
-DATABASE_USER=postgres
-DATABASE_PASSWORD=postgres
-DATABASE_NAME=techdocs
-
-# Application
-PORT=3001
-NODE_ENV=development
-```
-
-### Database Setup
-
-```bash
-# Start PostgreSQL (using Docker)
-docker run --name techdocs-db \
-  -e POSTGRES_PASSWORD=postgres \
-  -e POSTGRES_DB=techdocs \
-  -p 5432:5432 \
-  -d postgres:16
-
-# Run migrations (when implemented)
-cd apps/backend
-pnpm migration:run
-```
 
 ## 🔗 oRPC Type-Safe API
 
@@ -183,16 +138,7 @@ Visit `/todos` in the web app to see the full CRUD implementation with type-safe
 
 For more details, see `packages/orpc/README.md`.
 
-## 🔧 Configuration
 
-### ESLint
-
-The monorepo uses ESLint 9+ flat config format:
-
-- **Next.js apps**: `@workspace/eslint-config/next-js`
-- **NestJS apps**: `@workspace/eslint-config/nestjs`
-- **React libraries**: `@workspace/eslint-config/react-internal`
-- **Base config**: `@workspace/eslint-config/base`
 
 ### TypeScript
 
@@ -232,7 +178,6 @@ This monorepo uses:
 - TypeScript
 - Tailwind CSS 4
 - shadcn/ui components
-- Radix UI primitives
 - oRPC client with OpenAPILink
 
 ### Backend (backend)
@@ -256,5 +201,4 @@ This monorepo uses:
 - pnpm for package management
 
 ## 📄 License
-
-UNLICENSED - Private project
+MIT - Public project open for contribution

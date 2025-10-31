@@ -56,7 +56,7 @@ const __dirname = path.dirname(__filename);
         }),
       }),
     }),
-    AuthModule.forRoot({auth}),
+    AuthModule.forRoot({ auth }),
     I18nModule.forRootAsync({
       useFactory: (configService: ConfigService<AllConfigType>) => ({
         fallbackLanguage: configService.getOrThrow('app.fallbackLanguage', {

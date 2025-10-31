@@ -3,24 +3,24 @@ services:
     image: postgis/postgis:16-3.4-alpine
     container_name: turbo-postgres
     ports:
-      - 5439:5432
+      - ${DATABASE_PORT}:5432
     volumes:
       - ./turbo-db:/var/lib/postgresql/data
     environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: secret
-      POSTGRES_DB: turbo_db
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: ${DATABASE_NAME}
   adminer:
     image: adminer:latest
     container_name: turboal-adminer
     restart: always
     ports:
-      - 8088:8080
+      - ${ADMINER_PORT}:8080
   minio:
     image: minio/minio:RELEASE.2024-04-18T19-09-19Z
     ports:
-      - "9000:9000"  # MinIO API mapped to host port 9002
-      - "9001:9001"  # MinIO Console mapped to host port 9001
+      - "9000:9000" 
+      - "9001:9001"
     volumes:
       - ./storage:/data
     environment:
@@ -33,7 +33,7 @@ services:
       context: .
       dockerfile: maildev.Dockerfile
     ports:
-      - 1080:1080
-      - 1025:1025
+      - ${MAIL_CLIENT_PORT}:1080
+      - ${MAIL_PORT}:1025
 volumes:
   turbo-db:
