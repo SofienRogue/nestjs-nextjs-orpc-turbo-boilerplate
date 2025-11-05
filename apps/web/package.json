@@ -5,7 +5,7 @@
   "private": true,
   "prettier": "@workspace/prettier-config",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "start:dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

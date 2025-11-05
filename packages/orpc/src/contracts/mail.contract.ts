@@ -8,12 +8,12 @@ import { SendDummyMailOutputSchema } from '../schemas/mail.schema.js';
 export const mailContract = {
   /**
    * Send a dummy/test email
-   * POST /mail/send/dummy
+   * POST /v1/mail/send/dummy
    */
   sendDummy: oc
     .route({
       method: 'POST',
-      path: '/mail/send/dummy',
+      path: '/v1/mail/send/dummy',
       summary: 'Send dummy email',
       description: 'Send a test email for development and testing purposes',
       tags: ['Mail'],

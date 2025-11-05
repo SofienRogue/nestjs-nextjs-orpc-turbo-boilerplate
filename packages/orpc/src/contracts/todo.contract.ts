@@ -16,12 +16,12 @@ import {
 export const todoContract = {
   /**
    * List all todos
-   * GET /todos
+   * GET /v1/todos
    */
   list: oc
     .route({
       method: 'GET',
-      path: '/todos',
+      path: '/v1/todos',
       summary: 'List all todos',
       description: 'Retrieve all todo items',
       tags: ['Todos'],
@@ -30,12 +30,12 @@ export const todoContract = {
 
   /**
    * Get a single todo by ID
-   * GET /todos/{id}
+   * GET /v1/todos/{id}
    */
   get: oc
     .route({
       method: 'GET',
-      path: '/todos/{id}',
+      path: '/v1/todos/{id}',
       summary: 'Get todo by ID',
       description: 'Retrieve a single todo item by its ID',
       tags: ['Todos'],
@@ -45,12 +45,12 @@ export const todoContract = {
 
   /**
    * Create a new todo
-   * POST /todos
+   * POST /v1/todos
    */
   create: oc
     .route({
       method: 'POST',
-      path: '/todos',
+      path: '/v1/todos',
       summary: 'Create todo',
       description: 'Create a new todo item',
       tags: ['Todos'],
@@ -60,12 +60,12 @@ export const todoContract = {
 
   /**
    * Create a new todo with file upload
-   * POST /todos/with-file
+   * POST /v1/todos/with-file
    */
   createWithFile: oc
     .route({
       method: 'POST',
-      path: '/todos/with-file',
+      path: '/v1/todos/with-file',
       summary: 'Create todo with file',
       description: 'Create a new todo item with an optional file attachment using multipart/form-data',
       tags: ['Todos'],
@@ -86,12 +86,12 @@ export const todoContract = {
 
   /**
    * Update an existing todo
-   * PUT /todos/{id}
+   * PUT /v1/todos/{id}
    */
   update: oc
     .route({
       method: 'PUT',
-      path: '/todos/{id}',
+      path: '/v1/todos/{id}',
       summary: 'Update todo',
       description: 'Update an existing todo item',
       tags: ['Todos'],
@@ -108,12 +108,12 @@ export const todoContract = {
 
   /**
    * Delete a todo by ID
-   * DELETE /todos/{id}
+   * DELETE /v1/todos/{id}
    */
   delete: oc
     .route({
       method: 'DELETE',
-      path: '/todos/{id}',
+      path: '/v1/todos/{id}',
       summary: 'Delete todo',
       description: 'Delete a todo item by its ID',
       tags: ['Todos'],

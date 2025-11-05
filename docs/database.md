@@ -100,4 +100,4 @@ You can think of this parameter as how many concurrent database connections your
 
 Previous: [Project Setup](setup.md)
 
-Next: [Auth](auth.md)
+Next: [Auth](better-auth.md)

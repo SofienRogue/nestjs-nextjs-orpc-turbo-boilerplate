@@ -7,6 +7,7 @@ import { OpenAPIGenerator } from '@orpc/openapi';
 import { ZodToJsonSchemaConverter } from '@orpc/zod';
 import { contract } from '@workspace/orpc';
 import { apiReference } from '@scalar/nestjs-api-reference';
+import { VersioningType } from '@nestjs/common';
 
 async function bootstrap() {
   // Create app with body parser enabled
@@ -16,6 +17,11 @@ async function bootstrap() {
   app.enableCors({
     origin: process.env.FRONTEND_URL || 'http://localhost:3000',
     credentials: true,
+  });
+
+  // Enable URI versioning
+  app.enableVersioning({
+    type: VersioningType.URI,
   });
 
   // Create OpenAPI generator for oRPC contracts
@@ -28,7 +34,7 @@ async function bootstrap() {
     info: {
       title: 'Tech Docs Turbo API',
       version: '1.0.0',
-      description: 'API documentation for Tech Docs Turbo backend',
+      description: 'API documentation for Tech Docs Turbo backend (v1)',
     },
     servers: [
       {

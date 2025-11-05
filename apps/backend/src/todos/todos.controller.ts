@@ -1,7 +1,5 @@
 import {
   Controller,
-  Post,
-  Body,
   UploadedFile,
   UseInterceptors,
   HttpCode,
@@ -15,9 +13,10 @@ import { ZodResponse } from 'nestjs-zod';
 import { TodoDto } from './dto/todo.dto.js';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { CreateTodoWithFileDto } from './dto/create-todo-with-file.dto.js';
-import { ParseFormdataPipe } from '../utils/pipes/parse-formdata.pipe.js';
 import { FileUpload } from '../utils/open-api/file-upload.decorator.js';
+import { AllowAnonymous } from '@thallesp/nestjs-better-auth';
 
+@AllowAnonymous()
 @Controller()
 export class TodosController {
   constructor(private readonly todosService: TodosService) {}
@@ -85,7 +84,7 @@ export class TodosController {
       console.log('=============================');
       
       // Create the todo with the data (already parsed by ORPC)
-      const todo = await this.todosService.create(input.data);
+      const todo = this.todosService.create(input.data);
       
       // Return the created todo with file info
       return {

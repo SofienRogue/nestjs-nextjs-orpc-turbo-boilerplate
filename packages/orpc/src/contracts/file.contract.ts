@@ -14,12 +14,12 @@ import {
 export const fileContract = {
   /**
    * List all files with pagination
-   * GET /files
+   * GET /v1/files
    */
   list: oc
     .route({
       method: 'GET',
-      path: '/files',
+      path: '/v1/files',
       summary: 'List all files',
       description: 'Retrieve paginated list of files',
       tags: ['Files'],
@@ -56,12 +56,12 @@ export const fileContract = {
 
   /**
    * Get a single file by ID
-   * GET /files/{id}
+   * GET /v1/files/{id}
    */
   get: oc
     .route({
       method: 'GET',
-      path: '/files/{id}',
+      path: '/v1/files/{id}',
       summary: 'Get file by ID',
       description: 'Retrieve a single file by its ID',
       tags: ['Files'],
@@ -71,12 +71,12 @@ export const fileContract = {
 
   /**
    * Upload a single file
-   * POST /files/upload
+   * POST /v1/files/upload
    */
   upload: oc
     .route({
       method: 'POST',
-      path: '/files/upload',
+      path: '/v1/files/upload',
       summary: 'Upload file',
       description: 'Upload a single file using multipart/form-data',
       tags: ['Files'],
@@ -90,12 +90,12 @@ export const fileContract = {
 
   /**
    * Upload multiple files
-   * POST /files/upload-multiple
+   * POST /v1/files/upload-multiple
    */
   uploadMultiple: oc
     .route({
       method: 'POST',
-      path: '/files/upload-multiple',
+      path: '/v1/files/upload-multiple',
       summary: 'Upload multiple files',
       description: 'Upload multiple files (max 10) using multipart/form-data',
       tags: ['Files'],
@@ -109,12 +109,12 @@ export const fileContract = {
 
   /**
    * Update an existing file
-   * PUT /files/{id}
+   * PUT /v1/files/{id}
    */
   update: oc
     .route({
       method: 'PUT',
-      path: '/files/{id}',
+      path: '/v1/files/{id}',
       summary: 'Update file',
       description: 'Update an existing file by uploading a new version',
       tags: ['Files'],
@@ -129,12 +129,12 @@ export const fileContract = {
 
   /**
    * Delete a file by ID
-   * DELETE /files/{id}
+   * DELETE /v1/files/{id}
    */
   delete: oc
     .route({
       method: 'DELETE',
-      path: '/files/{id}',
+      path: '/v1/files/{id}',
       summary: 'Delete file',
       description: 'Delete a file by its ID',
       tags: ['Files'],
@@ -149,12 +149,12 @@ export const fileContract = {
 
   /**
    * Get presigned URL for file upload
-   * GET /files/presigned/{type}
+   * GET /v1/files/presigned/{type}
    */
   getPresignedUrl: oc
     .route({
       method: 'GET',
-      path: '/files/presigned/{type}',
+      path: '/v1/files/presigned/{type}',
       summary: 'Get presigned URL',
       description: 'Generate a presigned URL for direct file upload',
       tags: ['Files'],
